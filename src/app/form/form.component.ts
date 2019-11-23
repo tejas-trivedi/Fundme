@@ -10,6 +10,7 @@ export class FormComponent implements OnInit {
 
   constructor() { }
 
+  User: user [] = [];
   name: any;
   amount: any;
   hospitalName: any;
