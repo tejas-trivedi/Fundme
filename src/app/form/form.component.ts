@@ -28,7 +28,7 @@ submit(){
     contact: this.contact,
     prescriptionType: this.prescriptionType
   };
- this.userservice.user.push(user);
+ this.userservice.user = user;
  console.log(this.userservice.user);
 }
   ngOnInit() {
