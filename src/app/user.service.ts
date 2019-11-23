@@ -8,7 +8,11 @@ import { HttpClient } from '@angular/common/http';
 export class UserService {
   constructor(private http: HttpClient) { }
 senddata(){
-  this.http.post('http://localhost:3000/api/send', this.user);
+  this.http.post('http://localhost:3000/api/user', this.user).subscribe(
+    responce => {
+      console.log(responce);
+    }
+  );
 }
   user: user[] = [];
 

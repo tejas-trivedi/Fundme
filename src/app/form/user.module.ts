@@ -4,6 +4,6 @@ export interface user{
     hospitalName: string;
     hospitalAddress:string;
     contact : number;
-    prescriptionType: any;
+    
 
 }

@@ -2,7 +2,7 @@ const  express =  require('express');
 const  mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const path = require("path");
-
+const user = require("../backend/schema/user");
 
 
 const app = express();
@@ -27,6 +27,23 @@ app.use( (req, res, next) => {
 
   next();
 });
+
+router.put("/user",checkAuth, (req, res, next) => {
+  const user = new User({
+    
+      name: req.body.name,
+      amount : req.body.amount,
+      hospitalName: req.body.hospitalName,
+      hospitalAddress: req.body.hospitalAddress,
+      contact: req.body.contact,
+  });
+  console.log(user);
+  user.save().then(result => {
+    res.status(201).json({
+      message: "user created"
+    })
+  })
+ });
 
 
 module.exports = app;
