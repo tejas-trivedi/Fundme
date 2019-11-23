@@ -1,9 +1,9 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { ListComponent } from './list/list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatButtonModule,
@@ -27,7 +27,7 @@ import { FormsModule } from '@angular/forms';
     BrowserAnimationsModule,MatToolbarModule, MatButtonModule,
     MatSidenavModule, MatIconModule, MatListModule, MatCardModule,
     MatTabsModule, MatInputModule, MatProgressSpinnerModule, MatExpansionModule,
-    MatTabsModule, RouterModule, FormsModule
+    MatTabsModule, RouterModule, FormsModule, HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

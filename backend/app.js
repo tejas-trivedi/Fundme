@@ -8,7 +8,7 @@ const user = require("../backend/schema/user");
 const app = express();
 
 mongoose.connect(
-  "mongodb+srv://suyashthakur910@gmail.com:nishant1999@cluster0-r3uur.mongodb.net/test?retryWrites=true&w=majority")
+  "mongodb+srv://Suyash:thakur1999@cluster0-efyz1.mongodb.net/node-angular?retryWrites=true&w=majority")
 .then(() => {
     console.log("Connected to database!");
 })
@@ -28,7 +28,7 @@ app.use( (req, res, next) => {
   next();
 });
 
-router.put("/user",checkAuth, (req, res, next) => {
+app.put("/user", (req, res, next) => {
   const user = new User({
     
       name: req.body.name,
