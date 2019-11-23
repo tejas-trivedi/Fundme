@@ -9,12 +9,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatButtonModule,
   MatSidenavModule, MatIconModule, MatListModule, MatCardModule,
   MatTabsModule, MatInputModule, MatProgressSpinnerModule } from '@angular/material';
+import { FormComponent } from './form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    ListComponent
+    ListComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
