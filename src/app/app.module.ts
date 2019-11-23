@@ -8,7 +8,7 @@ import { ListComponent } from './list/list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatButtonModule,
   MatSidenavModule, MatIconModule, MatListModule, MatCardModule,
-  MatTabsModule, MatInputModule, MatProgressSpinnerModule } from '@angular/material';
+  MatTabsModule, MatInputModule, MatProgressSpinnerModule, MatExpansionModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -21,7 +21,7 @@ import { MatToolbarModule, MatButtonModule,
     AppRoutingModule,
     BrowserAnimationsModule,MatToolbarModule, MatButtonModule,
     MatSidenavModule, MatIconModule, MatListModule, MatCardModule,
-    MatTabsModule, MatInputModule, MatProgressSpinnerModule
+    MatTabsModule, MatInputModule, MatProgressSpinnerModule, MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
