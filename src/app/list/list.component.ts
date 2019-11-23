@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from '../user.service';
+import { user } from '../form/user.module';
 
 @Component({
   selector: 'app-list',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./list.component.css']
 })
 export class ListComponent implements OnInit {
+  userData: any;
 
-  constructor() { }
+  constructor(public userservice: UserService ) { }
 
   ngOnInit() {
+    this.userData = this.userservice.user;
+    console.log(this.userData);
   }
 
 }

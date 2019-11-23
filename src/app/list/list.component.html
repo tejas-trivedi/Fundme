@@ -5,14 +5,14 @@
     </mat-card-title>
   </mat-card-header>
   <mat-card-content>
-    <mat-expansion-panel>
+    <mat-expansion-panel *ngFor="let user of userData">
       <mat-expansion-panel-header>
           <button mat-button mat-mini-fab color='primary' style="transform: translateX(-30px);">Fund</button>
         <mat-panel-title>
-          Akshay
+          {{ user.name }}
         </mat-panel-title>
         <mat-panel-description>
-         Rs.100000
+         {{ user.amount }}
         </mat-panel-description>
       </mat-expansion-panel-header>
       <div style="display: flex; flex-flow: row;">
@@ -27,8 +27,8 @@
      <div> <h4>Hospital:</h4>
      </div>
      <div>
-      <p>Name of Hospital </p>
-      <p>Hospital Adress</p>
+      <p>{{user.hospitalName}} </p>
+      <p>{{user.hospitalAddress}}</p>
       <br>
         </div>
 
@@ -38,8 +38,8 @@
         <h4>Contact Details:</h4>
       </div>
       <div>
-              <p>Contact number- <br>
-        Email Id- </p> <br>
+              <p>{{user.contact}} <br>
+      </p> <br>
       </div> <br>
       </div>
      <button mat-stroked-button color='warm' >Download Prescription</button>
