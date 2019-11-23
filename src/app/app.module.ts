@@ -8,8 +8,9 @@ import { ListComponent } from './list/list.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule, MatButtonModule,
   MatSidenavModule, MatIconModule, MatListModule, MatCardModule,
-  MatTabsModule, MatInputModule, MatProgressSpinnerModule } from '@angular/material';
+  MatTabsModule, MatInputModule, MatProgressSpinnerModule, MatExpansionModule } from '@angular/material';
 import { FormComponent } from './form/form.component';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormComponent } from './form/form.component';
     AppRoutingModule,
     BrowserAnimationsModule,MatToolbarModule, MatButtonModule,
     MatSidenavModule, MatIconModule, MatListModule, MatCardModule,
-    MatTabsModule, MatInputModule, MatProgressSpinnerModule
+    MatTabsModule, MatInputModule, MatProgressSpinnerModule, MatExpansionModule,
+    MatTabsModule, RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 350px;
     margin: auto;
+    margin-top: 25px;
   }
   
   .example-container > * {
