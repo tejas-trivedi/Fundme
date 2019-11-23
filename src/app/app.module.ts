@@ -11,6 +11,8 @@ import { MatToolbarModule, MatButtonModule,
   MatTabsModule, MatInputModule, MatProgressSpinnerModule, MatExpansionModule } from '@angular/material';
 import { FormComponent } from './form/form.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,7 @@ import { RouterModule, Routes } from '@angular/router';
     BrowserAnimationsModule,MatToolbarModule, MatButtonModule,
     MatSidenavModule, MatIconModule, MatListModule, MatCardModule,
     MatTabsModule, MatInputModule, MatProgressSpinnerModule, MatExpansionModule,
-    MatTabsModule, RouterModule
+    MatTabsModule, RouterModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

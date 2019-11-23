@@ -9,6 +9,13 @@ export class FormComponent implements OnInit {
 
   constructor() { }
 
+  name: any;
+  amount: any;
+  hospitalName: any;
+  hospitalAddress: any;
+  contact: any;
+
+
   ngOnInit() {
   }
 

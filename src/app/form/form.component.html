@@ -5,35 +5,34 @@
             <mat-card-title>Add Fund Request</mat-card-title>
         </mat-card-header>
     <mat-form-field>
-      <input matInput placeholder="Name of Patient">
+      <input matInput placeholder="Name of Patient" [(ngModel)] = "name">
     </mat-form-field>
-  
+
     <mat-form-field>
-      <input matInput placeholder="Amount Needed">
+      <input matInput placeholder="Amount Needed" [(ngModel)]= "amount">
     </mat-form-field>
     <mat-form-field>
-        <input matInput placeholder="Hospital Name">
+        <input matInput placeholder="Hospital Name" [(ngModel)]= "hospitalname">
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Hospital Address">
+        <input matInput placeholder="Hospital Address" [(ngModel)]= "hospitaladd">
       </mat-form-field>
       <mat-form-field>
-        <input matInput placeholder="Contact">
+        <input matInput placeholder="Contact" [(ngModel)]="contact">
       </mat-form-field>
       <mat-form-field>Enter Prescription
         <br><br>
         <input matInput placeholder="Reports" type="file">
-        
+
       </mat-form-field>
       <div class="example-button-row">
             <button mat-raised-button color="primary">Submit</button>
           </div>
     </mat-card>
-      
-     
-      
-        
-      
-   
-  
-  
+
+
+
+
+
+
+
