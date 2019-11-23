@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { user } from './user.module';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-form',
@@ -8,7 +9,7 @@ import { user } from './user.module';
 })
 export class FormComponent implements OnInit {
 
-  constructor() { }
+  constructor(public userservice:UserService) { }
 
   User: user [] = [];
   name: any;
@@ -16,9 +17,22 @@ export class FormComponent implements OnInit {
   hospitalName: any;
   hospitalAddress: any;
   contact: any;
+  prescriptionType: any;
 
-
+submit(){
+  const user : user = {
+    name: this.name,
+    amount: this.amount,
+    hospitalName: this.hospitalName,
+    hospitalAddress: this.hospitalAddress,
+    contact: this.contact,
+    prescriptionType: this.prescriptionType
+  };
+ this.userservice.user.push(user);
+ console.log(this.userservice.user);
+}
   ngOnInit() {
+  
   }
 
 }

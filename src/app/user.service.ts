@@ -5,7 +5,7 @@ import { user } from './form/user.module';
   providedIn: 'root'
 })
 export class UserService {
-
+  user: user[] = [];
   constructor() { }
   user: user [] = [];
 }
