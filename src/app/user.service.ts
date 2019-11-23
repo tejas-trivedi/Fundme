@@ -6,9 +6,10 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class UserService {
-  user: user;
   constructor(private http: HttpClient) { }
 senddata(){
   this.http.post('http://localhost:3000/api/send', this.user);
 }
+  user: user[] = [];
+
 }

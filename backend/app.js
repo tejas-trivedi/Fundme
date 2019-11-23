@@ -8,7 +8,7 @@ const path = require("path");
 const app = express();
 
 mongoose.connect(
-  "mongodb://localhost:27017")
+  "mongodb+srv://suyashthakur910@gmail.com:nishant1999@cluster0-r3uur.mongodb.net/test?retryWrites=true&w=majority")
 .then(() => {
     console.log("Connected to database!");
 })
